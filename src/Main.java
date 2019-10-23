@@ -1,20 +1,24 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main( String[] args )
+    {
+        String name;
+        String breed;
+        int age;
 
         Scanner keyboard = new Scanner(System.in);
 
-        int num1, num2;
 
-        System.out.print( "First temperature? " );
-        num1 = keyboard.nextInt();
+        System.out.print( "Greetings. What is your pet's name? " );
+        name = keyboard.next();
 
-        System.out.print( "Second temperature? " );
-                num2 = keyboard.nextInt();
+        System.out.print( "What kind of animal is " + name + "? " );
+        breed = keyboard.next();
 
-                System.out.println("The average temperature is : " + ((num1 + num2)/2));
-            }
-        }
+        System.out.print( "How old is " + name + "? ");
+        age = keyboard.nextInt();
 
-
+        System.out.println( name + " is your " + breed + " and it is " + age );
+    }
+}
